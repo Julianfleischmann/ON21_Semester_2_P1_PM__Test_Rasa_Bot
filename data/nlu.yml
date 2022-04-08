@@ -25,3 +25,9 @@ nlu:
     - Are you a bot?
     - am I talking to a human?
     - is this a chatbot?
+
+- intent: asking_notion
+  examples: |
+    - I need help in notion
+    - Notion
+    - Can you help me with notion?

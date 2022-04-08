@@ -7,6 +7,7 @@ intents:
 - inform
 - subscribe
 - bot_challenge
+- asking_notion
 slots:
   email:
     type: text
@@ -27,11 +28,14 @@ responses:
   - text: You're all set! Check your inbox at {email} to confirm your subscription.
   utter_i_am_a_bot:
   - text: "I am a bot, powered by RASA!"
+  utter_notion_help:
+  - text: "Yes, you can find something at https://www.notion.so/help"
 actions:
 - '...'
 - utter_greet
 - utter_subscribed
 - utter_i_am_a_bot
+- utter_notion_help
 forms:
   newsletter_form:
     required_slots:
